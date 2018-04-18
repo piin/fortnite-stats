@@ -1,0 +1,19 @@
+# platform :ios, '9.0'
+
+target 'FortniteStats' do
+  use_frameworks!
+  pod 'Alamofire'
+
+  # Pods for FortniteStats
+
+  target 'FortniteStatsTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'FortniteStatsUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
