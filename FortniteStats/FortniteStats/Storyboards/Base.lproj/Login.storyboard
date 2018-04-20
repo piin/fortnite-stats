@@ -18,36 +18,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Fortnite name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ivf-Lw-Awz">
-                                <rect key="frame" x="50" y="205" width="220" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
-                            </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jUT-kf-oRU">
-                                <rect key="frame" x="83" y="265" width="154" height="29"/>
-                                <segments>
-                                    <segment title="Pc"/>
-                                    <segment title="Play"/>
-                                    <segment title="Xbox"/>
-                                </segments>
-                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jNd-Yk-tkT">
+                                <rect key="frame" x="40" y="194" width="240" height="88"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Fortnite name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ivf-Lw-Awz">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                    </textField>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jUT-kf-oRU">
+                                        <rect key="frame" x="0.0" y="60" width="240" height="29"/>
+                                        <segments>
+                                            <segment title="Pc"/>
+                                            <segment title="Play"/>
+                                            <segment title="Xbox"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jUT-kf-oRU" secondAttribute="trailing" constant="83" id="7s2-r1-c4y"/>
-                            <constraint firstItem="jUT-kf-oRU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="BmN-Qg-rqs"/>
-                            <constraint firstItem="Ivf-Lw-Awz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="185" id="MOO-ZX-snY"/>
-                            <constraint firstItem="Ivf-Lw-Awz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="cgo-Gk-0l8"/>
-                            <constraint firstItem="jUT-kf-oRU" firstAttribute="top" secondItem="Ivf-Lw-Awz" secondAttribute="bottom" constant="30" id="fy0-Jw-ohJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ivf-Lw-Awz" secondAttribute="trailing" constant="50" id="zuV-eq-e6v"/>
+                            <constraint firstItem="jNd-Yk-tkT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="UCM-C4-BB6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jNd-Yk-tkT" secondAttribute="trailing" constant="40" id="mKo-38-rRK"/>
+                            <constraint firstItem="jNd-Yk-tkT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="174" id="uaL-vM-2AA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="Ivf-Lw-Awz" id="WgX-nK-dJ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+            <point key="canvasLocation" x="116.25" y="117.25352112676056"/>
         </scene>
     </scenes>
 </document>
