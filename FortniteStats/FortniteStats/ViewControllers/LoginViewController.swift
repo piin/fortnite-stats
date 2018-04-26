@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController {
+    var userModel: UserModel?
 
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -19,8 +21,17 @@ class LoginViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
 
+}
+
+// MARK: - textFieldDelegate
+
+extension LoginViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+                
+        return true
+    }
 }
 

@@ -1,5 +1,5 @@
 //
-//  LoginViewModel.swift
+//  Api.swift
 //  FortniteStats
 //
 //  Created by Jair Pinedo on 20/04/18.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-class LoginViewModel {
+struct Api {
     
-    var userModel: UserModel?
+    static let BASE_URL = "https://api.fortnitetracker.com/v1/profile"
     
 }
