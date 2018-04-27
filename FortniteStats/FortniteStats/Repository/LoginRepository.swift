@@ -7,26 +7,25 @@
 //
 
 import Foundation
-import Alamofire
 
 class LoginRepository {
     
     private var http: HttpRequest
-    private var userModel: UserModel?
-    
-    typealias HandlerClosure = ((_ loginResponse: UserModel?, _ err: String?) -> ())
     
     init() {
         http = HttpRequest()
     }
     
-    func login( loginHandler: @escaping HandlerClosure ) {
-
-        http.request(path: "/pc/piiin", method: HTTPMethod.get, params: [:]) { (response, error) in
-            self.userModel = response
-            
+    /**
+     Login
+     - parameters:
+        - completionHandler: result closure with userModel or error
+     */
+    func login( completionHandler: @escaping (Result<UserModel>) -> () ) {
+        http.request(path: "/pc/piiin", method: .get, params: [:]) { (result) in
+            completionHandler(result)
         }
-        
+
     }
     
 }

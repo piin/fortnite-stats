@@ -12,4 +12,23 @@ class LoginViewModel {
     
     var userModel: UserModel?
     
+    private var repository = LoginRepository()
+    
+    /**
+     Make login request
+     - parameters:
+        - completionHandler: result closure with userModel or error
+     */
+    func login(completionHandler: @escaping (Result<UserModel>) -> ()) {
+        repository.login { (result) in
+            switch result {
+            case .Success(let user):
+                self.userModel = user
+            case .Failure(let error):
+                print(error.getErrorMessage())
+            }
+            completionHandler(result)
+        }
+    }
+    
 }

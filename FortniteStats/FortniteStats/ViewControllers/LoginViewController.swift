@@ -10,7 +10,8 @@ import UIKit
 import Alamofire
 
 class LoginViewController: UIViewController {
-    var userModel: UserModel?
+    
+    var viewModel = LoginViewModel()
 
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -30,6 +31,15 @@ class LoginViewController: UIViewController {
 extension LoginViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        viewModel.login { result in
+            switch result {
+            case .Success(let user):
+                // TODO: - Success login go to next view
+                print(user)
+            case .Failure(let error):
+                print(error.getErrorMessage())
+            }
+        }
                 
         return true
     }

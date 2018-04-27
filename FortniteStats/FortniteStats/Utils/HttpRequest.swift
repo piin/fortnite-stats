@@ -8,9 +8,12 @@
 
 import Alamofire
 
-class HttpRequest {
-    
-    typealias HandlerClosure<T> = ((_ response: T?, _ error: String?) -> ())
+enum Result<T> {
+    case Success(T)
+    case Failure(HttpErrors)
+}
+
+struct HttpRequest {
     
     var headers: HTTPHeaders = [ "TRN-Api-Key": "55a19837-9d24-46bf-81fe-6ba01bd40efd" ]
     
@@ -21,7 +24,7 @@ class HttpRequest {
         - method: HTTPMethod enum value
         - params: Parameters for request
      */
-    func request<T: Decodable>( path: String, method: HTTPMethod, params: Parameters, handler: @escaping HandlerClosure<T> ) {
+    func request<T: Decodable>(path: String, method: HTTPMethod, params: Parameters, completionHandler: @escaping (Result<T>) -> ()) {
         
         let url = Api.BASE_URL + path
         
@@ -33,16 +36,16 @@ class HttpRequest {
                 switch response.result {
                 case .success:
                     guard let data = response.data else {
-                        handler(nil,"Error with JSON response")
+                        completionHandler( .Failure(.jsonError) )
                         return
                     }
                     
                     guard let user = try? JSONDecoder().decode(T.self, from: data ) else {
-                        handler(nil,"Error with JSON response")
+                        completionHandler( .Failure(.jsonError) )
                         return
                     }
                     
-                    handler(user,nil)
+                    completionHandler( .Success(user) )
                     break
                 case .failure(let error):
                     print(error)
@@ -50,7 +53,6 @@ class HttpRequest {
                 }
                 
         }
-        
     }
     
 }
