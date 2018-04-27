@@ -1,0 +1,25 @@
+//
+//  HttpErrors.swift
+//  FortniteStats
+//
+//  Created by Jair Pinedo on 26/04/18.
+//  Copyright © 2018 Jair Pinedo. All rights reserved.
+//
+
+
+enum HttpErrors {
+    
+    case jsonError
+    case serverError
+    
+    func getErrorMessage() -> String {
+        
+        switch self {
+        case .jsonError:
+            return "Error with the JSON"
+        case .serverError:
+            return "Error with the server"
+        }
+        
+    }
+}
