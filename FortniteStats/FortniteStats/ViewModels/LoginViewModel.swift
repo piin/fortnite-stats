@@ -10,17 +10,43 @@ import Foundation
 
 class LoginViewModel {
     
-    var userModel: UserModel?
+    // MARK: - Properties
     
+    var userModel: UserModel?
+    private var validUserName = false
     private var repository = LoginRepository()
+    
+    enum LoginErrors : String {
+        case invalidUserName = "Invalid Fortnite name"
+    }
+    
+    // MARK: - Methods
+    
+    /**
+     Validate if userName is not nil and has more than 1 character
+     - parameters:
+        - userName: String? with the userName
+     - returns: LoginErrors?
+     */
+    func validateUserName(userName: String?) -> LoginErrors? {
+        guard let text = userName, text.count > 1 else {
+            validUserName = false
+            return .invalidUserName
+        }
+        validUserName = true
+        return nil
+    }
     
     /**
      Make login request
      - parameters:
+        - platform: String can be pc, xbl, psn
+        - userName: String
         - completionHandler: result closure with userModel or error
      */
-    func login(completionHandler: @escaping (Result<UserModel>) -> ()) {
-        repository.login { (result) in
+    func login(userName: String, platform: String, completionHandler: @escaping (Result<UserModel>) -> ()) {
+        
+        repository.login(userName: userName, platform: platform) { (result) in
             switch result {
             case .Success(let user):
                 self.userModel = user
@@ -29,6 +55,7 @@ class LoginViewModel {
             }
             completionHandler(result)
         }
+
     }
     
 }
