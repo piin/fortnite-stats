@@ -52,11 +52,20 @@
                     <connections>
                         <outlet property="nameTextField" destination="Ivf-Lw-Awz" id="WgX-nK-dJ8"/>
                         <outlet property="platformSegmentedControl" destination="jUT-kf-oRU" id="HsV-UN-LMe"/>
+                        <segue destination="vwX-jX-Kze" kind="show" identifier="goToHomeSegue" id="uU2-xs-rRN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116" y="116.49175412293854"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Ib1-3A-0y4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="vwX-jX-Kze" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNj-Ak-C8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="116"/>
         </scene>
     </scenes>
 </document>
