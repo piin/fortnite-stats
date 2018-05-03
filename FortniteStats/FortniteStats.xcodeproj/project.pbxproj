@@ -16,6 +16,7 @@
 		E00F1487208FBFDE00F98F4D /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00F1486208FBFDE00F98F4D /* LoginRepository.swift */; };
 		E04B13AA20926D21002241A8 /* HttpErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B13A920926D21002241A8 /* HttpErrors.swift */; };
 		E081AD48209BA80400E80D22 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E081AD47209BA80400E80D22 /* Home.storyboard */; };
+		E081AD4B209BC51500E80D22 /* FortniteStats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E081AD49209BC51500E80D22 /* FortniteStats.xcdatamodeld */; };
 		E094C6BA207FEAFA00545CB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094C6B9207FEAFA00545CB5 /* AppDelegate.swift */; };
 		E094C6BC207FEAFA00545CB5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094C6BB207FEAFA00545CB5 /* LoginViewController.swift */; };
 		E094C6BF207FEAFA00545CB5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E094C6BD207FEAFA00545CB5 /* Login.storyboard */; };
@@ -61,6 +62,7 @@
 		E00F1486208FBFDE00F98F4D /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		E04B13A920926D21002241A8 /* HttpErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpErrors.swift; sourceTree = "<group>"; };
 		E081AD47209BA80400E80D22 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E081AD4A209BC51500E80D22 /* FortniteStats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FortniteStats.xcdatamodel; sourceTree = "<group>"; };
 		E094C6B6207FEAFA00545CB5 /* FortniteStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortniteStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E094C6B9207FEAFA00545CB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E094C6BB207FEAFA00545CB5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,14 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		E081AD4C209BC52200E80D22 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E081AD49209BC51500E80D22 /* FortniteStats.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		E094C6AD207FEAF900545CB5 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +194,7 @@
 				E0FF85AA208A38B0004F9F8F /* Api */,
 				E0FF85A5208A1D92004F9F8F /* Utils */,
 				E00AC9E9209B775B0092CA7C /* Customs */,
+				E081AD4C209BC52200E80D22 /* CoreData */,
 				E094C6E9207FEB8500545CB5 /* Models */,
 				E00AC9E6209B69B80092CA7C /* Extensions */,
 				E00F1485208FA8B500F98F4D /* Repository */,
@@ -489,6 +500,7 @@
 				E00F1487208FBFDE00F98F4D /* LoginRepository.swift in Sources */,
 				E0FF85AC208A38C7004F9F8F /* Api.swift in Sources */,
 				E0FF85AE208A81A5004F9F8F /* UserModel.swift in Sources */,
+				E081AD4B209BC51500E80D22 /* FortniteStats.xcdatamodeld in Sources */,
 				E00AC9EB209B77950092CA7C /* PlatformSegmentedControl.swift in Sources */,
 				E00AC9E8209B69E20092CA7C /* AlertsViewControllerExtension.swift in Sources */,
 				E0FF85A7208A2A89004F9F8F /* LoginViewModel.swift in Sources */,
@@ -791,6 +803,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E081AD49209BC51500E80D22 /* FortniteStats.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E081AD4A209BC51500E80D22 /* FortniteStats.xcdatamodel */,
+			);
+			currentVersion = E081AD4A209BC51500E80D22 /* FortniteStats.xcdatamodel */;
+			path = FortniteStats.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E094C6AE207FEAF900545CB5 /* Project object */;
 }
