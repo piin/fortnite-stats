@@ -8,9 +8,10 @@
 
 
 enum HttpErrors {
-    
+
     case jsonError
     case serverError
+    case apiError(String)
     
     func getErrorMessage() -> String {
         
@@ -19,7 +20,11 @@ enum HttpErrors {
             return "Error with the JSON"
         case .serverError:
             return "Error with the server"
+        case .apiError(let error):
+            return error
         }
         
     }
 }
+
+

@@ -24,7 +24,7 @@ struct HttpRequest {
         - method: HTTPMethod enum value
         - params: Parameters for request
      */
-    func request<T: Decodable>(path: String, method: HTTPMethod, params: Parameters, completionHandler: @escaping (Result<T>) -> ()) {
+    func request<T: Decodable>(path: String, method: HTTPMethod, params: Parameters, completionHandler: @escaping ( Result<T> ) -> () ) {
         
         let url = Api.BASE_URL + path
         
@@ -37,6 +37,11 @@ struct HttpRequest {
                 case .success:
                     guard let data = response.data else {
                         completionHandler( .Failure(.jsonError) )
+                        return
+                    }
+                    
+                    if let errors = try? JSONDecoder().decode(HttpErrosModel.self, from: data ) {
+                        completionHandler( .Failure(.apiError(errors.error)) )
                         return
                     }
                     

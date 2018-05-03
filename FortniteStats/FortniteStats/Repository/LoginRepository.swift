@@ -17,12 +17,15 @@ class LoginRepository {
     }
     
     /**
-     Login
+     Login request
      - parameters:
+        - userName: String
+        - platform: String be pc, xbl, psn
         - completionHandler: result closure with userModel or error
      */
-    func login( completionHandler: @escaping (Result<UserModel>) -> () ) {
-        http.request(path: "/pc/piiin", method: .get, params: [:]) { (result) in
+    func login(userName: String, platform: String, completionHandler: @escaping ( Result<UserModel> ) -> () ) {
+        
+        http.request(path: "/\(platform)/\(userName)", method: .get, params: [:]) { (result) in
             completionHandler(result)
         }
 
