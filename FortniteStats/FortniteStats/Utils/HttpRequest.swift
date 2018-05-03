@@ -53,7 +53,8 @@ struct HttpRequest {
                     completionHandler( .Success(user) )
                     break
                 case .failure(let error):
-                    print(error)
+                    print("ERROR: server error", error)
+                    completionHandler( .Failure(.serverError) )
                     break
                 }
                 
