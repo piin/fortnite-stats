@@ -30,7 +30,7 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="TUo-Qm-eHx"/>
                                         </connections>
                                     </textField>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jUT-kf-oRU">
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jUT-kf-oRU" customClass="PlatformSegmentedControl" customModule="FortniteStats" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="60" width="295" height="29"/>
                                         <segments>
                                             <segment title="Pc"/>
@@ -51,11 +51,12 @@
                     </view>
                     <connections>
                         <outlet property="nameTextField" destination="Ivf-Lw-Awz" id="WgX-nK-dJ8"/>
+                        <outlet property="platformSegmentedControl" destination="jUT-kf-oRU" id="HsV-UN-LMe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.25" y="117.25352112676056"/>
+            <point key="canvasLocation" x="116" y="116.49175412293854"/>
         </scene>
     </scenes>
 </document>
