@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     // MARK: - Properties
     
     private let viewModel = LoginViewModel()
+    private let GO_HOME_SEGUE = "goToHomeSegue"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,7 @@ class LoginViewController: UIViewController {
     }
     
     private func doLogin() {
+        
         guard let userName = nameTextField.text else {
             fatalError("Should never enter here")
         }
@@ -52,15 +54,14 @@ class LoginViewController: UIViewController {
             self.dismiss(animated: true, completion: {
                 switch result {
                 case .Success(let user):
-                    print(user)
+                    self.performSegue(withIdentifier: self.GO_HOME_SEGUE, sender: nil)
+                    print("USER: ", user)
                 case .Failure(let error):
                     self.showAlert(message: error.getErrorMessage())
                 }
                 
             })
-            
         }
-        
     }
     
 }
