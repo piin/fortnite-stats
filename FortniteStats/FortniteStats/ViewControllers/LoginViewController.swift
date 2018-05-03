@@ -7,23 +7,62 @@
 //
 
 import UIKit
-import Alamofire
 
 class LoginViewController: UIViewController {
-    
-    var viewModel = LoginViewModel()
 
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var platformSegmentedControl: PlatformSegmentedControl!
+    
+    // MARK: - Properties
+    
+    private let viewModel = LoginViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
+    // MARK: - Methods
+    
+    private func validateTextField() {
+        self.view.endEditing(true)
+        
+        if let validUserNameError =  viewModel.validateUserName(userName: nameTextField.text) {
+            showAlert(message: validUserNameError.rawValue)
+            return
+        }
+        
+        doLogin()
+        
+    }
+    
+    private func doLogin() {
+        guard let userName = nameTextField.text else {
+            fatalError("Should never enter here")
+        }
+        
+        let platform = platformSegmentedControl.selectedValue
+        
+        self.showProgressView()
+        
+        viewModel.login(userName: userName, platform: platform.rawValue ) { (result) in
+            self.dismiss(animated: true, completion: {
+                switch result {
+                case .Success(let user):
+                    print(user)
+                case .Failure(let error):
+                    self.showAlert(message: error.getErrorMessage())
+                }
+                
+            })
+            
+        }
+        
+    }
+    
 }
 
 // MARK: - textFieldDelegate
@@ -31,17 +70,9 @@ class LoginViewController: UIViewController {
 extension LoginViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        viewModel.login { result in
-            switch result {
-            case .Success(let user):
-                // TODO: - Success login go to next view
-                print(user)
-            case .Failure(let error):
-                print(error.getErrorMessage())
-            }
-        }
-                
+        validateTextField()
         return true
     }
+    
 }
 
