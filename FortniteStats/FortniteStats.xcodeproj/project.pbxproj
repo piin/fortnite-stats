@@ -15,6 +15,7 @@
 		E00AC9ED209B83DF0092CA7C /* HttpErrosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00AC9EC209B83DF0092CA7C /* HttpErrosModel.swift */; };
 		E00F1487208FBFDE00F98F4D /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00F1486208FBFDE00F98F4D /* LoginRepository.swift */; };
 		E04B13AA20926D21002241A8 /* HttpErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B13A920926D21002241A8 /* HttpErrors.swift */; };
+		E06C64CF20A4D6E40006E21A /* LoginViewControllerUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06C64CE20A4D6E30006E21A /* LoginViewControllerUITest.swift */; };
 		E081AD48209BA80400E80D22 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E081AD47209BA80400E80D22 /* Home.storyboard */; };
 		E081AD4B209BC51500E80D22 /* FortniteStats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E081AD49209BC51500E80D22 /* FortniteStats.xcdatamodeld */; };
 		E094C6BA207FEAFA00545CB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094C6B9207FEAFA00545CB5 /* AppDelegate.swift */; };
@@ -23,7 +24,6 @@
 		E094C6C1207FEAFA00545CB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E094C6C0207FEAFA00545CB5 /* Assets.xcassets */; };
 		E094C6C4207FEAFA00545CB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E094C6C2207FEAFA00545CB5 /* LaunchScreen.storyboard */; };
 		E094C6CF207FEAFA00545CB5 /* FortniteStatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094C6CE207FEAFA00545CB5 /* FortniteStatsTests.swift */; };
-		E094C6DA207FEAFA00545CB5 /* FortniteStatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094C6D9207FEAFA00545CB5 /* FortniteStatsUITests.swift */; };
 		E0B688DA209C969E00C83D07 /* DBConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B688D9209C969E00C83D07 /* DBConnection.swift */; };
 		E0B688DC209CA9F000C83D07 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B688DB209CA9F000C83D07 /* UserDB.swift */; };
 		E0B688DE209CB94E00C83D07 /* ILoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B688DD209CB94E00C83D07 /* ILoginViewModel.swift */; };
@@ -64,6 +64,7 @@
 		E00AC9EC209B83DF0092CA7C /* HttpErrosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpErrosModel.swift; sourceTree = "<group>"; };
 		E00F1486208FBFDE00F98F4D /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		E04B13A920926D21002241A8 /* HttpErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpErrors.swift; sourceTree = "<group>"; };
+		E06C64CE20A4D6E30006E21A /* LoginViewControllerUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerUITest.swift; sourceTree = "<group>"; };
 		E081AD47209BA80400E80D22 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		E081AD4A209BC51500E80D22 /* FortniteStats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FortniteStats.xcdatamodel; sourceTree = "<group>"; };
 		E094C6B6207FEAFA00545CB5 /* FortniteStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortniteStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +78,6 @@
 		E094C6CE207FEAFA00545CB5 /* FortniteStatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteStatsTests.swift; sourceTree = "<group>"; };
 		E094C6D0207FEAFA00545CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E094C6D5207FEAFA00545CB5 /* FortniteStatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortniteStatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E094C6D9207FEAFA00545CB5 /* FortniteStatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteStatsUITests.swift; sourceTree = "<group>"; };
 		E094C6DB207FEAFA00545CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0B688D9209C969E00C83D07 /* DBConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBConnection.swift; sourceTree = "<group>"; };
 		E0B688DB209CA9F000C83D07 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
@@ -228,7 +228,7 @@
 		E094C6D8207FEAFA00545CB5 /* FortniteStatsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E094C6D9207FEAFA00545CB5 /* FortniteStatsUITests.swift */,
+				E06C64CE20A4D6E30006E21A /* LoginViewControllerUITest.swift */,
 				E094C6DB207FEAFA00545CB5 /* Info.plist */,
 			);
 			path = FortniteStatsUITests;
@@ -539,7 +539,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E094C6DA207FEAFA00545CB5 /* FortniteStatsUITests.swift in Sources */,
+				E06C64CF20A4D6E40006E21A /* LoginViewControllerUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
