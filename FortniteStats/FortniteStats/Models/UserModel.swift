@@ -9,7 +9,8 @@
 import Foundation
 
 struct UserModel: Decodable {
-
+    let platformName: String
+    let epicUserHandle: String
     let lifeTimeStats: [ LifeTimeStats ]
     
 }
