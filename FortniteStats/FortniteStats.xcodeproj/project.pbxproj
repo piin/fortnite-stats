@@ -24,6 +24,9 @@
 		E094C6C4207FEAFA00545CB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E094C6C2207FEAFA00545CB5 /* LaunchScreen.storyboard */; };
 		E094C6CF207FEAFA00545CB5 /* FortniteStatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094C6CE207FEAFA00545CB5 /* FortniteStatsTests.swift */; };
 		E094C6DA207FEAFA00545CB5 /* FortniteStatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094C6D9207FEAFA00545CB5 /* FortniteStatsUITests.swift */; };
+		E0B688DA209C969E00C83D07 /* DBConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B688D9209C969E00C83D07 /* DBConnection.swift */; };
+		E0B688DC209CA9F000C83D07 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B688DB209CA9F000C83D07 /* UserDB.swift */; };
+		E0B688DE209CB94E00C83D07 /* ILoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B688DD209CB94E00C83D07 /* ILoginViewModel.swift */; };
 		E0FF85A7208A2A89004F9F8F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF85A6208A2A89004F9F8F /* LoginViewModel.swift */; };
 		E0FF85A9208A3135004F9F8F /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF85A8208A3135004F9F8F /* HttpRequest.swift */; };
 		E0FF85AC208A38C7004F9F8F /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF85AB208A38C7004F9F8F /* Api.swift */; };
@@ -76,6 +79,9 @@
 		E094C6D5207FEAFA00545CB5 /* FortniteStatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortniteStatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E094C6D9207FEAFA00545CB5 /* FortniteStatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteStatsUITests.swift; sourceTree = "<group>"; };
 		E094C6DB207FEAFA00545CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0B688D9209C969E00C83D07 /* DBConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBConnection.swift; sourceTree = "<group>"; };
+		E0B688DB209CA9F000C83D07 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
+		E0B688DD209CB94E00C83D07 /* ILoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoginViewModel.swift; sourceTree = "<group>"; };
 		E0FF85A6208A2A89004F9F8F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E0FF85A8208A3135004F9F8F /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		E0FF85AB208A38C7004F9F8F /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
@@ -162,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				E081AD49209BC51500E80D22 /* FortniteStats.xcdatamodeld */,
+				E0B688D9209C969E00C83D07 /* DBConnection.swift */,
+				E0B688DB209CA9F000C83D07 /* UserDB.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -237,6 +245,7 @@
 		E094C6E8207FEB7700545CB5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E0B688DF209CC49100C83D07 /* Interfaces */,
 				E0FF85A6208A2A89004F9F8F /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
@@ -259,6 +268,14 @@
 				E081AD47209BA80400E80D22 /* Home.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E0B688DF209CC49100C83D07 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				E0B688DD209CB94E00C83D07 /* ILoginViewModel.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		E0FF85A5208A1D92004F9F8F /* Utils */ = {
@@ -492,15 +509,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B688DE209CB94E00C83D07 /* ILoginViewModel.swift in Sources */,
 				E04B13AA20926D21002241A8 /* HttpErrors.swift in Sources */,
 				E094C6BC207FEAFA00545CB5 /* LoginViewController.swift in Sources */,
 				E0FF85A9208A3135004F9F8F /* HttpRequest.swift in Sources */,
+				E0B688DA209C969E00C83D07 /* DBConnection.swift in Sources */,
 				E094C6BA207FEAFA00545CB5 /* AppDelegate.swift in Sources */,
 				E00AC9ED209B83DF0092CA7C /* HttpErrosModel.swift in Sources */,
 				E00F1487208FBFDE00F98F4D /* LoginRepository.swift in Sources */,
 				E0FF85AC208A38C7004F9F8F /* Api.swift in Sources */,
 				E0FF85AE208A81A5004F9F8F /* UserModel.swift in Sources */,
 				E081AD4B209BC51500E80D22 /* FortniteStats.xcdatamodeld in Sources */,
+				E0B688DC209CA9F000C83D07 /* UserDB.swift in Sources */,
 				E00AC9EB209B77950092CA7C /* PlatformSegmentedControl.swift in Sources */,
 				E00AC9E8209B69E20092CA7C /* AlertsViewControllerExtension.swift in Sources */,
 				E0FF85A7208A2A89004F9F8F /* LoginViewModel.swift in Sources */,
@@ -672,7 +692,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FortniteStats/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.piin.FortniteStats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -688,7 +708,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FortniteStats/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.piin.FortniteStats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
