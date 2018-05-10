@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
     
     // MARK: - Properties
     
-    private let viewModel = LoginViewModel()
+    private let viewModel: ILoginViewModel = LoginViewModel()
     private let GO_HOME_SEGUE = "goToHomeSegue"
     
     override func viewDidLoad() {
