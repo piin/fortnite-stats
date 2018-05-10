@@ -11,9 +11,11 @@ import Foundation
 class LoginRepository {
     
     private var http: HttpRequest
+    private var userDB: UserDB
     
     init() {
         http = HttpRequest()
+        userDB = UserDB()
     }
     
     /**
@@ -26,8 +28,20 @@ class LoginRepository {
     func login(userName: String, platform: String, completionHandler: @escaping ( Result<UserModel> ) -> () ) {
         
         http.request(path: "/\(platform)/\(userName)", method: .get, params: [:]) { (result) in
+            
             completionHandler(result)
         }
+
+    }
+    
+    /**
+     Save User in DB
+     - parameters:
+        - userModel: UserModel
+     */
+    func saveUser(userModel: UserModel) {
+        
+        _ = userDB.createUser(userModel: userModel)
 
     }
     

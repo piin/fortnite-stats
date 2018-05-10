@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1114" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ManagedUsers" representedClassName="ManagedUsers" syncable="YES" codeGenerationType="class">
+        <attribute name="epicUserHandle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kills" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="matchesPlayed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="platformName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="top3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="top3s" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="top5s" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="top6s" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="top12s" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="top25s" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="winPercent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wins" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ManagedUsers" positionX="-2511" positionY="-396" width="128" height="253"/>
+    </elements>
+</model>
