@@ -23,10 +23,13 @@
 		E094C6BF207FEAFA00545CB5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E094C6BD207FEAFA00545CB5 /* Login.storyboard */; };
 		E094C6C1207FEAFA00545CB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E094C6C0207FEAFA00545CB5 /* Assets.xcassets */; };
 		E094C6C4207FEAFA00545CB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E094C6C2207FEAFA00545CB5 /* LaunchScreen.storyboard */; };
-		E094C6CF207FEAFA00545CB5 /* FortniteStatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094C6CE207FEAFA00545CB5 /* FortniteStatsTests.swift */; };
+		E094C6CF207FEAFA00545CB5 /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094C6CE207FEAFA00545CB5 /* LoginViewModelTest.swift */; };
 		E0B688DA209C969E00C83D07 /* DBConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B688D9209C969E00C83D07 /* DBConnection.swift */; };
 		E0B688DC209CA9F000C83D07 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B688DB209CA9F000C83D07 /* UserDB.swift */; };
 		E0B688DE209CB94E00C83D07 /* ILoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B688DD209CB94E00C83D07 /* ILoginViewModel.swift */; };
+		E0C5D0B620A5D8C300CEB24E /* LoginRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C5D0B520A5D8C300CEB24E /* LoginRepositoryMock.swift */; };
+		E0C5D0BA20A5D9B700CEB24E /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = E0C5D0B920A5D9B700CEB24E /* User.json */; };
+		E0C5D0BD20A61DA600CEB24E /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C5D0BC20A61DA600CEB24E /* XCTestCase.swift */; };
 		E0FF85A7208A2A89004F9F8F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF85A6208A2A89004F9F8F /* LoginViewModel.swift */; };
 		E0FF85A9208A3135004F9F8F /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF85A8208A3135004F9F8F /* HttpRequest.swift */; };
 		E0FF85AC208A38C7004F9F8F /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF85AB208A38C7004F9F8F /* Api.swift */; };
@@ -75,13 +78,16 @@
 		E094C6C3207FEAFA00545CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E094C6C5207FEAFA00545CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E094C6CA207FEAFA00545CB5 /* FortniteStatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortniteStatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E094C6CE207FEAFA00545CB5 /* FortniteStatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteStatsTests.swift; sourceTree = "<group>"; };
+		E094C6CE207FEAFA00545CB5 /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
 		E094C6D0207FEAFA00545CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E094C6D5207FEAFA00545CB5 /* FortniteStatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortniteStatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E094C6DB207FEAFA00545CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0B688D9209C969E00C83D07 /* DBConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBConnection.swift; sourceTree = "<group>"; };
 		E0B688DB209CA9F000C83D07 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
 		E0B688DD209CB94E00C83D07 /* ILoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoginViewModel.swift; sourceTree = "<group>"; };
+		E0C5D0B520A5D8C300CEB24E /* LoginRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryMock.swift; sourceTree = "<group>"; };
+		E0C5D0B920A5D9B700CEB24E /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
+		E0C5D0BC20A61DA600CEB24E /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		E0FF85A6208A2A89004F9F8F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E0FF85A8208A3135004F9F8F /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		E0FF85AB208A38C7004F9F8F /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
@@ -219,7 +225,10 @@
 		E094C6CD207FEAFA00545CB5 /* FortniteStatsTests */ = {
 			isa = PBXGroup;
 			children = (
-				E094C6CE207FEAFA00545CB5 /* FortniteStatsTests.swift */,
+				E0C5D0B820A5D99300CEB24E /* Stubs */,
+				E0C5D0BB20A61D9000CEB24E /* Extension */,
+				E0C5D0B720A5D97600CEB24E /* TestCases */,
+				E0C5D0B420A5D89D00CEB24E /* Mocks */,
 				E094C6D0207FEAFA00545CB5 /* Info.plist */,
 			);
 			path = FortniteStatsTests;
@@ -276,6 +285,38 @@
 				E0B688DD209CB94E00C83D07 /* ILoginViewModel.swift */,
 			);
 			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		E0C5D0B420A5D89D00CEB24E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E0C5D0B520A5D8C300CEB24E /* LoginRepositoryMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E0C5D0B720A5D97600CEB24E /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				E094C6CE207FEAFA00545CB5 /* LoginViewModelTest.swift */,
+			);
+			path = TestCases;
+			sourceTree = "<group>";
+		};
+		E0C5D0B820A5D99300CEB24E /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				E0C5D0B920A5D9B700CEB24E /* User.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		E0C5D0BB20A61D9000CEB24E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E0C5D0BC20A61DA600CEB24E /* XCTestCase.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		E0FF85A5208A1D92004F9F8F /* Utils */ = {
@@ -417,6 +458,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C5D0BA20A5D9B700CEB24E /* User.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,7 +573,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E094C6CF207FEAFA00545CB5 /* FortniteStatsTests.swift in Sources */,
+				E094C6CF207FEAFA00545CB5 /* LoginViewModelTest.swift in Sources */,
+				E0C5D0BD20A61DA600CEB24E /* XCTestCase.swift in Sources */,
+				E0C5D0B620A5D8C300CEB24E /* LoginRepositoryMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

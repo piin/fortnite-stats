@@ -13,6 +13,13 @@ protocol ILoginViewModel {
     var userModel: UserModel? { get set }
     
     /**
+     Initialize class with a LoginRepository
+     - parameters:
+        - repository: LoginRepository
+     */
+    init(repository: LoginRepository)
+    
+    /**
      Validate if userName is not nil and has more than 1 character
      - parameters:
         - userName: String? with the userName

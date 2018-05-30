@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import Alamofire
 
 class LoginRepository {
     
-    private var http: HttpRequest
+    var http: HttpRequest
     private var userDB: UserDB
     
     init() {
@@ -27,8 +28,7 @@ class LoginRepository {
      */
     func login(userName: String, platform: String, completionHandler: @escaping ( Result<UserModel> ) -> () ) {
         
-        http.request(path: "/\(platform)/\(userName)", method: .get, params: [:]) { (result) in
-            
+        http.request(path: "/\(platform)/\(userName)", method: HTTPMethod.get, params: [:]) { (result: Result<UserModel> ) in
             completionHandler(result)
         }
 
