@@ -15,15 +15,16 @@ enum LoginErrors : String {
 }
 
 class LoginViewModel: ILoginViewModel {
-
+    
     // MARK: - Properties
     
     var userModel: UserModel?
-    private var repository: LoginRepository
+    private let repository: LoginRepository
     
-    init() {
-        repository = LoginRepository()
+    required init(repository: LoginRepository) {
+        self.repository = repository
     }
+
 
     // MARK: - Methods
     

@@ -14,8 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var platformSegmentedControl: PlatformSegmentedControl!
     
     // MARK: - Properties
-    
-    private let viewModel: ILoginViewModel = LoginViewModel()
+    private let viewModel: ILoginViewModel = LoginViewModel(repository: LoginRepository())
     private let GO_HOME_SEGUE = "goToHomeSegue"
     
     override func viewDidLoad() {
