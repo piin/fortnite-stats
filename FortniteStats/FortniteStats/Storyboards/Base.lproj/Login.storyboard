@@ -37,6 +37,9 @@
                                             <segment title="Play"/>
                                             <segment title="Xbox"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="changePlatform:" destination="BYZ-38-t0r" eventType="valueChanged" id="AJX-KK-KXZ"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                             </stackView>

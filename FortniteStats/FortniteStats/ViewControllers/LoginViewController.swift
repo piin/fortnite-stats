@@ -16,11 +16,13 @@ class LoginViewController: UIViewController {
     // MARK: - Properties
     private let viewModel: ILoginViewModel = LoginViewModel(repository: LoginRepository())
     private let GO_HOME_SEGUE = "goToHomeSegue"
+    private var snackbar: Snackbar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.snackbar = Snackbar(viewController: self, message: "Loading")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -61,6 +63,19 @@ class LoginViewController: UIViewController {
                 
             })
         }
+    }
+    
+    @IBAction func changePlatform(_ sender: PlatformSegmentedControl) {
+        
+        switch sender.selectedValue {
+        case .pc:
+            snackbar.show()
+        case .psn:
+            snackbar.dismiss()
+        case .xbl:
+            snackbar.show()
+        }
+
     }
     
 }

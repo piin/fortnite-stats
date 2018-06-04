@@ -10,6 +10,7 @@
 		7CB1C2346392BFC294E8B56F /* Pods_FortniteStatsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2C933779794244F1E870FA /* Pods_FortniteStatsTests.framework */; };
 		7E472BDC1CAA9F943A7861BE /* Pods_FortniteStatsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A27024CBD4744B194D5497 /* Pods_FortniteStatsUITests.framework */; };
 		9432ED207F906B86D0801F8D /* Pods_FortniteStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22855F453042592C5181AE9D /* Pods_FortniteStats.framework */; };
+		E0074DCC20BF30F900457414 /* Snackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0074DCB20BF30F900457414 /* Snackbar.swift */; };
 		E00AC9E8209B69E20092CA7C /* AlertsViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00AC9E7209B69E20092CA7C /* AlertsViewControllerExtension.swift */; };
 		E00AC9EB209B77950092CA7C /* PlatformSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00AC9EA209B77950092CA7C /* PlatformSegmentedControl.swift */; };
 		E00AC9ED209B83DF0092CA7C /* HttpErrosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00AC9EC209B83DF0092CA7C /* HttpErrosModel.swift */; };
@@ -62,6 +63,7 @@
 		9E99AEE0FFAADBA5B2A255A9 /* Pods-FortniteStatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortniteStatsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FortniteStatsUITests/Pods-FortniteStatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC03531E9809C6B7A9497D45 /* Pods-FortniteStats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortniteStats.release.xcconfig"; path = "Pods/Target Support Files/Pods-FortniteStats/Pods-FortniteStats.release.xcconfig"; sourceTree = "<group>"; };
 		D84C3AA0A74E890A37C39CE1 /* Pods-FortniteStatsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortniteStatsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FortniteStatsUITests/Pods-FortniteStatsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E0074DCB20BF30F900457414 /* Snackbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snackbar.swift; sourceTree = "<group>"; };
 		E00AC9E7209B69E20092CA7C /* AlertsViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewControllerExtension.swift; sourceTree = "<group>"; };
 		E00AC9EA209B77950092CA7C /* PlatformSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformSegmentedControl.swift; sourceTree = "<group>"; };
 		E00AC9EC209B83DF0092CA7C /* HttpErrosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpErrosModel.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				E00AC9EA209B77950092CA7C /* PlatformSegmentedControl.swift */,
+				E0074DCB20BF30F900457414 /* Snackbar.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				E0B688DC209CA9F000C83D07 /* UserDB.swift in Sources */,
 				E00AC9EB209B77950092CA7C /* PlatformSegmentedControl.swift in Sources */,
 				E00AC9E8209B69E20092CA7C /* AlertsViewControllerExtension.swift in Sources */,
+				E0074DCC20BF30F900457414 /* Snackbar.swift in Sources */,
 				E0FF85A7208A2A89004F9F8F /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
