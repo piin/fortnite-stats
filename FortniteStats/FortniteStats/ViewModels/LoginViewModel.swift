@@ -25,7 +25,6 @@ class LoginViewModel: ILoginViewModel {
         self.repository = repository
     }
 
-
     // MARK: - Methods
     
     func validateUserName(userName: String?) -> LoginErrors? {

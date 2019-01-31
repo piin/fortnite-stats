@@ -17,7 +17,6 @@ class LoginViewController: UIViewController {
     private let viewModel: ILoginViewModel = LoginViewModel(repository: LoginRepository())
     private let GO_HOME_SEGUE = "goToHomeSegue"
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
