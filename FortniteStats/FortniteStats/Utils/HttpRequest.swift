@@ -15,7 +15,7 @@ enum Result<T> {
 
 struct HttpRequest {
     
-    var headers: HTTPHeaders = [ "TRN-Api-Key": "55a19837-9d24-46bf-81fe-6ba01bd40efd" ]
+    var headers: HTTPHeaders = [ Api.HEADER_KEY: Api.HEADER_KEY_VALUE ]
     
     /**
      Make HTTP request in order to get a generic response
@@ -23,6 +23,7 @@ struct HttpRequest {
         - path: String with the URL path
         - method: HTTPMethod enum value
         - params: Parameters for request
+        - completionHandler: closue to execute  ( input: Result<T> ) -> ()
      */
     func request<T: Decodable>(path: String, method: HTTPMethod, params: Parameters, completionHandler: @escaping ( Result<T> ) -> () ) {
         
