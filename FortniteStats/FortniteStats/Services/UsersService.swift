@@ -9,7 +9,8 @@
 import Foundation
 import Alamofire
 
-class LoginRepository {
+class UsersService {
+    
     
     var http: HttpRequest
     private var userDB: UserDB
@@ -20,13 +21,13 @@ class LoginRepository {
     }
     
     /**
-     Login request
+     search request
      - parameters:
         - userName: String
-        - platform: String be pc, xbl, psn
+        - platform: String  pc, xbl, psn
         - completionHandler: result closure with userModel or error
      */
-    func login(userName: String, platform: String, completionHandler: @escaping ( Result<UserModel> ) -> () ) {
+    func search(userName: String, platform: String, completionHandler: @escaping ( Result<UserModel> ) -> () ) {
         
         http.request(path: "/\(platform)/\(userName)", method: HTTPMethod.get, params: [:]) { (result: Result<UserModel> ) in
             completionHandler(result)
