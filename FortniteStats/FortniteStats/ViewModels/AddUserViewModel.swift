@@ -10,38 +10,38 @@
 
 import Foundation
 
-enum LoginErrors : String {
+enum SearchErrors : String {
     case invalidUserName = "Invalid Fortnite name"
 }
 
-class LoginViewModel: ILoginViewModel {
+class AddUserViewModel: IAddUserViewModel {
     
     // MARK: - Properties
     
     var userModel: UserModel?
-    private let repository: LoginRepository
+    private let service: UsersService
     
-    required init(repository: LoginRepository) {
-        self.repository = repository
+    required init(service: UsersService) {
+        self.service = service
     }
 
     // MARK: - Methods
     
-    func validateUserName(userName: String?) -> LoginErrors? {
+    func validateUserName(userName: String?) -> SearchErrors? {
         guard let text = userName, text.count > 1 else {
             return .invalidUserName
         }
         return nil
     }
     
-    func login(userName: String, platform: String, completionHandler: @escaping (Result<UserModel>) -> ()) {
+    func search(userName: String, platform: String, completionHandler: @escaping (Result<UserModel>) -> ()) {
         
-        repository.login(userName: userName, platform: platform) { (result) in
+        service.search(userName: userName, platform: platform) { (result) in
             
             switch result {
             case .Success(let user):
                 self.userModel = user
-                self.repository.saveUser(userModel: user)
+                self.service.saveUser(userModel: user)
             case .Failure(let error):
                 print(error.getErrorMessage())
             }
