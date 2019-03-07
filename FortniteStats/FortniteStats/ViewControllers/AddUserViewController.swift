@@ -8,18 +8,18 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
-
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var platformSegmentedControl: PlatformSegmentedControl!
+class AddUserViewController: UIViewController {
     
     // MARK: - Properties
-    private let viewModel: ILoginViewModel = LoginViewModel(repository: LoginRepository())
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var platformSegmentedControl: PlatformSegmentedControl! 
+    
+    private let viewModel: IAddUserViewModel = AddUserViewModel(service: UsersService())
     private let GO_HOME_SEGUE = "goToHomeSegue"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,11 +36,11 @@ class LoginViewController: UIViewController {
             return
         }
         
-        doLogin()
+        searchUser()
         
     }
     
-    private func doLogin() {
+    private func searchUser() {
         
         guard let userName = nameTextField.text else {
             fatalError("Should never enter here")
@@ -50,7 +50,7 @@ class LoginViewController: UIViewController {
         
         self.showProgressView()
         
-        viewModel.login(userName: userName, platform: platform.rawValue ) { (result) in
+        viewModel.search(userName: userName, platform: platform.rawValue ) { (result) in
             self.dismiss(animated: true, completion: {
                 switch result {
                 case .Success(let user):
@@ -64,24 +64,11 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction func changePlatform(_ sender: PlatformSegmentedControl) {
-        // TODO: Add the code for next functions
-        switch sender.selectedValue {
-        case .pc:
-           print("Go to some where")
-        case .psn:
-           print("Go to some where")
-        case .xbl:
-            print("Go to some where")
-        }
-
-    }
-    
 }
 
 // MARK: - textFieldDelegate
 
-extension LoginViewController: UITextFieldDelegate {
+extension AddUserViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         validateTextField()
