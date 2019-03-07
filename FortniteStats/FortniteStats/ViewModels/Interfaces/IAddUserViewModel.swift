@@ -8,16 +8,16 @@
 
 import Foundation
 
-protocol ILoginViewModel {
+protocol IAddUserViewModel {
     
     var userModel: UserModel? { get set }
     
     /**
      Initialize class with a LoginRepository
      - parameters:
-        - repository: LoginRepository
+        - repository: UsersService
      */
-    init(repository: LoginRepository)
+    init(service: UsersService)
     
     /**
      Validate if userName is not nil and has more than 1 character
@@ -25,7 +25,7 @@ protocol ILoginViewModel {
         - userName: String? with the userName
      - returns: LoginErrors?
      */
-    func validateUserName(userName: String?) -> LoginErrors?
+    func validateUserName(userName: String?) -> SearchErrors?
     
     /**
      Make login request and save user in DB
@@ -34,6 +34,6 @@ protocol ILoginViewModel {
         - userName: String
         - completionHandler: result closure with userModel or error
      */
-    func login(userName: String, platform: String, completionHandler: @escaping (Result<UserModel>) -> ())
+    func search(userName: String, platform: String, completionHandler: @escaping (Result<UserModel>) -> ())
     
 }
