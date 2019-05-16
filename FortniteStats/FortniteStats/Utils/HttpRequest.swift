@@ -8,58 +8,58 @@
 
 import Alamofire
 
-enum Result<T> {
-    case Success(T)
-    case Failure(HttpErrors)
-}
-
-struct HttpRequest {
+final class HttpRequest {
     
     var headers: HTTPHeaders = [ Api.HEADER_KEY: Api.HEADER_KEY_VALUE ]
     
     /**
      Make HTTP request in order to get a generic response
+     
      - parameters:
         - path: String with the URL path
         - method: HTTPMethod enum value
         - params: Parameters for request
         - completionHandler: closue to execute  ( input: Result<T> ) -> ()
+     
      */
-    func request<T: Decodable>(path: String, method: HTTPMethod, params: Parameters, completionHandler: @escaping ( Result<T> ) -> () ) {
+    func request<T: Decodable>(
+        path: String,
+        method: HTTPMethod,
+        params: Parameters = [:],
+        completionHandler: @escaping ( Result<T, HttpErrors> ) -> Void ) {
         
         let url = Api.BASE_URL + path
         
-        Alamofire.request(url, method: method, parameters: params, encoding: URLEncoding.default, headers: headers )
+        AF.request(url, method: method,
+            parameters: params, encoding: URLEncoding.default, headers: headers )
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
             .responseData { ( response ) in
                 
                 switch response.result {
                 case .success:
-                    guard let data = response.data else {
-                        completionHandler( .Failure(.jsonError) )
-                        return
-                    }
                     
-                    if let errors = try? JSONDecoder().decode(HttpErrosModel.self, from: data ) {
-                        completionHandler( .Failure(.apiError(errors.error)) )
+                    guard let data = response.data else {
+                        completionHandler(.failure(.jsonError))
                         return
                     }
                     
                     guard let user = try? JSONDecoder().decode(T.self, from: data ) else {
-                        completionHandler( .Failure(.jsonError) )
+                        completionHandler(.failure(.jsonError))
                         return
                     }
                     
-                    completionHandler( .Success(user) )
+                    completionHandler( .success(user) )
                     break
-                case .failure(let error):
-                    print("ERROR: server error", error)
-                    completionHandler( .Failure(.serverError) )
+                    
+                case .failure(let reason):
+                    print("Error: \(reason)")
+                    completionHandler( .failure(.serverError) )
                     break
                 }
                 
         }
+        
     }
     
 }
