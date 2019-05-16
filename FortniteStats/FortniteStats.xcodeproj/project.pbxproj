@@ -7,10 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7800B0A222496F5F004035AD /* AddUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7800B0A122496F5F004035AD /* AddUserPresenter.swift */; };
+		7800B0A4224970A7004035AD /* AddUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7800B0A3224970A7004035AD /* AddUserRouter.swift */; };
+		7800B0A6224987F4004035AD /* AddUserWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7800B0A5224987F4004035AD /* AddUserWorker.swift */; };
 		783A7C872208E7270074A504 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783A7C862208E7270074A504 /* RoundedImageView.swift */; };
 		783A7C8A2208F5980074A504 /* LifetimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783A7C882208F5980074A504 /* LifetimeCell.swift */; };
 		783A7C8B2208F5980074A504 /* LifetimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 783A7C892208F5980074A504 /* LifetimeCell.xib */; };
-		783A7C8E2208FB240074A504 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783A7C8D2208FB240074A504 /* HomeViewController.swift */; };
+		78647BD12244449A008F8D55 /* AddUserModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78647BD02244449A008F8D55 /* AddUserModels.swift */; };
+		78647BD322445075008F8D55 /* AddUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78647BD222445075008F8D55 /* AddUserInteractor.swift */; };
+		788D3D3A2267EC8000B0F45B /* AddUserConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788D3D392267EC8000B0F45B /* AddUserConfigurator.swift */; };
+		78AC682F22848DB8004D0FBB /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC682922848DB7004D0FBB /* HomeInteractor.swift */; };
+		78AC683022848DB8004D0FBB /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC682A22848DB7004D0FBB /* HomeRouter.swift */; };
+		78AC683122848DB8004D0FBB /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC682B22848DB7004D0FBB /* HomeModels.swift */; };
+		78AC683222848DB8004D0FBB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC682C22848DB7004D0FBB /* HomeViewController.swift */; };
+		78AC683322848DB8004D0FBB /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC682D22848DB8004D0FBB /* HomeWorker.swift */; };
+		78AC683422848DB8004D0FBB /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC682E22848DB8004D0FBB /* HomePresenter.swift */; };
+		78AC683B22849034004D0FBB /* HomeTabPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC683522849034004D0FBB /* HomeTabPresenter.swift */; };
+		78AC683C22849034004D0FBB /* HomeTabWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC683622849034004D0FBB /* HomeTabWorker.swift */; };
+		78AC683D22849034004D0FBB /* HomeTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC683722849034004D0FBB /* HomeTabRouter.swift */; };
+		78AC683E22849034004D0FBB /* HomeTabModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC683822849034004D0FBB /* HomeTabModels.swift */; };
+		78AC683F22849034004D0FBB /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC683922849034004D0FBB /* HomeTabViewController.swift */; };
+		78B8E04C2284933F00378D17 /* HomeTabInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC683A22849034004D0FBB /* HomeTabInteractor.swift */; };
+		78CDDCBE228B5FB5006D6277 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDDCBD228B5FB5006D6277 /* Entities.swift */; };
 		7CB1C2346392BFC294E8B56F /* Pods_FortniteStatsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2C933779794244F1E870FA /* Pods_FortniteStatsTests.framework */; };
 		7E472BDC1CAA9F943A7861BE /* Pods_FortniteStatsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A27024CBD4744B194D5497 /* Pods_FortniteStatsUITests.framework */; };
 		9432ED207F906B86D0801F8D /* Pods_FortniteStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22855F453042592C5181AE9D /* Pods_FortniteStats.framework */; };
@@ -18,7 +36,6 @@
 		E00AC9E8209B69E20092CA7C /* AlertsViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00AC9E7209B69E20092CA7C /* AlertsViewControllerExtension.swift */; };
 		E00AC9EB209B77950092CA7C /* PlatformSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00AC9EA209B77950092CA7C /* PlatformSegmentedControl.swift */; };
 		E00AC9ED209B83DF0092CA7C /* HttpErrosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00AC9EC209B83DF0092CA7C /* HttpErrosModel.swift */; };
-		E00F1487208FBFDE00F98F4D /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00F1486208FBFDE00F98F4D /* UsersService.swift */; };
 		E04B13AA20926D21002241A8 /* HttpErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B13A920926D21002241A8 /* HttpErrors.swift */; };
 		E06C64CF20A4D6E40006E21A /* LoginViewControllerUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06C64CE20A4D6E30006E21A /* LoginViewControllerUITest.swift */; };
 		E081AD48209BA80400E80D22 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E081AD47209BA80400E80D22 /* Home.storyboard */; };
@@ -31,11 +48,8 @@
 		E094C6CF207FEAFA00545CB5 /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094C6CE207FEAFA00545CB5 /* LoginViewModelTest.swift */; };
 		E0B688DA209C969E00C83D07 /* DBConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B688D9209C969E00C83D07 /* DBConnection.swift */; };
 		E0B688DC209CA9F000C83D07 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B688DB209CA9F000C83D07 /* UserDB.swift */; };
-		E0B688DE209CB94E00C83D07 /* IAddUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B688DD209CB94E00C83D07 /* IAddUserViewModel.swift */; };
-		E0C5D0B620A5D8C300CEB24E /* LoginRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C5D0B520A5D8C300CEB24E /* LoginRepositoryMock.swift */; };
 		E0C5D0BA20A5D9B700CEB24E /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = E0C5D0B920A5D9B700CEB24E /* User.json */; };
 		E0C5D0BD20A61DA600CEB24E /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C5D0BC20A61DA600CEB24E /* XCTestCase.swift */; };
-		E0FF85A7208A2A89004F9F8F /* AddUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF85A6208A2A89004F9F8F /* AddUserViewModel.swift */; };
 		E0FF85A9208A3135004F9F8F /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF85A8208A3135004F9F8F /* HttpRequest.swift */; };
 		E0FF85AC208A38C7004F9F8F /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF85AB208A38C7004F9F8F /* Api.swift */; };
 		E0FF85AE208A81A5004F9F8F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF85AD208A81A5004F9F8F /* UserModel.swift */; };
@@ -64,10 +78,28 @@
 		22855F453042592C5181AE9D /* Pods_FortniteStats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortniteStats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		374B66E718C07DF8974D702C /* Pods-FortniteStatsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortniteStatsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FortniteStatsTests/Pods-FortniteStatsTests.release.xcconfig"; sourceTree = "<group>"; };
 		57A27024CBD4744B194D5497 /* Pods_FortniteStatsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortniteStatsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7800B0A122496F5F004035AD /* AddUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserPresenter.swift; sourceTree = "<group>"; };
+		7800B0A3224970A7004035AD /* AddUserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserRouter.swift; sourceTree = "<group>"; };
+		7800B0A5224987F4004035AD /* AddUserWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserWorker.swift; sourceTree = "<group>"; };
 		783A7C862208E7270074A504 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		783A7C882208F5980074A504 /* LifetimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifetimeCell.swift; sourceTree = "<group>"; };
 		783A7C892208F5980074A504 /* LifetimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifetimeCell.xib; sourceTree = "<group>"; };
-		783A7C8D2208FB240074A504 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		78647BD02244449A008F8D55 /* AddUserModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserModels.swift; sourceTree = "<group>"; };
+		78647BD222445075008F8D55 /* AddUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserInteractor.swift; sourceTree = "<group>"; };
+		788D3D392267EC8000B0F45B /* AddUserConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserConfigurator.swift; sourceTree = "<group>"; };
+		78AC682922848DB7004D0FBB /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		78AC682A22848DB7004D0FBB /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		78AC682B22848DB7004D0FBB /* HomeModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		78AC682C22848DB7004D0FBB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		78AC682D22848DB8004D0FBB /* HomeWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		78AC682E22848DB8004D0FBB /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		78AC683522849034004D0FBB /* HomeTabPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabPresenter.swift; sourceTree = "<group>"; };
+		78AC683622849034004D0FBB /* HomeTabWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabWorker.swift; sourceTree = "<group>"; };
+		78AC683722849034004D0FBB /* HomeTabRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabRouter.swift; sourceTree = "<group>"; };
+		78AC683822849034004D0FBB /* HomeTabModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabModels.swift; sourceTree = "<group>"; };
+		78AC683922849034004D0FBB /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		78AC683A22849034004D0FBB /* HomeTabInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabInteractor.swift; sourceTree = "<group>"; };
+		78CDDCBD228B5FB5006D6277 /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		9E99AEE0FFAADBA5B2A255A9 /* Pods-FortniteStatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortniteStatsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FortniteStatsUITests/Pods-FortniteStatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC03531E9809C6B7A9497D45 /* Pods-FortniteStats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortniteStats.release.xcconfig"; path = "Pods/Target Support Files/Pods-FortniteStats/Pods-FortniteStats.release.xcconfig"; sourceTree = "<group>"; };
 		D84C3AA0A74E890A37C39CE1 /* Pods-FortniteStatsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortniteStatsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FortniteStatsUITests/Pods-FortniteStatsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +107,6 @@
 		E00AC9E7209B69E20092CA7C /* AlertsViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewControllerExtension.swift; sourceTree = "<group>"; };
 		E00AC9EA209B77950092CA7C /* PlatformSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformSegmentedControl.swift; sourceTree = "<group>"; };
 		E00AC9EC209B83DF0092CA7C /* HttpErrosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpErrosModel.swift; sourceTree = "<group>"; };
-		E00F1486208FBFDE00F98F4D /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
 		E04B13A920926D21002241A8 /* HttpErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpErrors.swift; sourceTree = "<group>"; };
 		E06C64CE20A4D6E30006E21A /* LoginViewControllerUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerUITest.swift; sourceTree = "<group>"; };
 		E081AD47209BA80400E80D22 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -94,11 +125,8 @@
 		E094C6DB207FEAFA00545CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0B688D9209C969E00C83D07 /* DBConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBConnection.swift; sourceTree = "<group>"; };
 		E0B688DB209CA9F000C83D07 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
-		E0B688DD209CB94E00C83D07 /* IAddUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAddUserViewModel.swift; sourceTree = "<group>"; };
-		E0C5D0B520A5D8C300CEB24E /* LoginRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryMock.swift; sourceTree = "<group>"; };
 		E0C5D0B920A5D9B700CEB24E /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
 		E0C5D0BC20A61DA600CEB24E /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
-		E0FF85A6208A2A89004F9F8F /* AddUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewModel.swift; sourceTree = "<group>"; };
 		E0FF85A8208A3135004F9F8F /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		E0FF85AB208A38C7004F9F8F /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		E0FF85AD208A81A5004F9F8F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
@@ -165,6 +193,56 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		78647BCE22444438008F8D55 /* Add user scene */ = {
+			isa = PBXGroup;
+			children = (
+				E094C6BB207FEAFA00545CB5 /* AddUserViewController.swift */,
+				78647BD222445075008F8D55 /* AddUserInteractor.swift */,
+				7800B0A122496F5F004035AD /* AddUserPresenter.swift */,
+				7800B0A5224987F4004035AD /* AddUserWorker.swift */,
+				78647BD02244449A008F8D55 /* AddUserModels.swift */,
+				7800B0A3224970A7004035AD /* AddUserRouter.swift */,
+				788D3D392267EC8000B0F45B /* AddUserConfigurator.swift */,
+			);
+			path = "Add user scene";
+			sourceTree = "<group>";
+		};
+		78647BCF22444464008F8D55 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				78AC684122849039004D0FBB /* HomeTab */,
+				78EAFA3622848D8800BEF554 /* Home scene */,
+				78647BCE22444438008F8D55 /* Add user scene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		78AC684122849039004D0FBB /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				78AC683522849034004D0FBB /* HomeTabPresenter.swift */,
+				78AC683622849034004D0FBB /* HomeTabWorker.swift */,
+				78AC683722849034004D0FBB /* HomeTabRouter.swift */,
+				78AC683822849034004D0FBB /* HomeTabModels.swift */,
+				78AC683922849034004D0FBB /* HomeTabViewController.swift */,
+				78AC683A22849034004D0FBB /* HomeTabInteractor.swift */,
+			);
+			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		78EAFA3622848D8800BEF554 /* Home scene */ = {
+			isa = PBXGroup;
+			children = (
+				78AC682E22848DB8004D0FBB /* HomePresenter.swift */,
+				78AC682D22848DB8004D0FBB /* HomeWorker.swift */,
+				78AC682A22848DB7004D0FBB /* HomeRouter.swift */,
+				78AC682B22848DB7004D0FBB /* HomeModels.swift */,
+				78AC682C22848DB7004D0FBB /* HomeViewController.swift */,
+				78AC682922848DB7004D0FBB /* HomeInteractor.swift */,
+			);
+			path = "Home scene";
+			sourceTree = "<group>";
+		};
 		E00AC9E6209B69B80092CA7C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,19 +262,12 @@
 			path = CustomsComponents;
 			sourceTree = "<group>";
 		};
-		E00F1485208FA8B500F98F4D /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				E00F1486208FBFDE00F98F4D /* UsersService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		E081AD4C209BC52200E80D22 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				E081AD49209BC51500E80D22 /* FortniteStats.xcdatamodeld */,
 				E0B688D9209C969E00C83D07 /* DBConnection.swift */,
+				78CDDCBD228B5FB5006D6277 /* Entities.swift */,
 				E0B688DB209CA9F000C83D07 /* UserDB.swift */,
 			);
 			path = CoreData;
@@ -231,11 +302,9 @@
 				E0FF85A5208A1D92004F9F8F /* Utils */,
 				E094C6E9207FEB8500545CB5 /* Models */,
 				E081AD4C209BC52200E80D22 /* CoreData */,
-				E00F1485208FA8B500F98F4D /* Services */,
 				E00AC9E6209B69B80092CA7C /* Extensions */,
 				E094C6EA207FEB9300545CB5 /* Storyboards */,
-				E094C6E8207FEB7700545CB5 /* ViewModels */,
-				E094C6E7207FEB7000545CB5 /* ViewControllers */,
+				78647BCF22444464008F8D55 /* Scenes */,
 				E00AC9E9209B775B0092CA7C /* CustomsComponents */,
 				E094C6B9207FEAFA00545CB5 /* AppDelegate.swift */,
 				E094C6C0207FEAFA00545CB5 /* Assets.xcassets */,
@@ -265,24 +334,6 @@
 			path = FortniteStatsUITests;
 			sourceTree = "<group>";
 		};
-		E094C6E7207FEB7000545CB5 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				E094C6BB207FEAFA00545CB5 /* AddUserViewController.swift */,
-				783A7C8D2208FB240074A504 /* HomeViewController.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		E094C6E8207FEB7700545CB5 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				E0B688DF209CC49100C83D07 /* Interfaces */,
-				E0FF85A6208A2A89004F9F8F /* AddUserViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		E094C6E9207FEB8500545CB5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,18 +353,9 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		E0B688DF209CC49100C83D07 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				E0B688DD209CB94E00C83D07 /* IAddUserViewModel.swift */,
-			);
-			path = Interfaces;
-			sourceTree = "<group>";
-		};
 		E0C5D0B420A5D89D00CEB24E /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				E0C5D0B520A5D8C300CEB24E /* LoginRepositoryMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -431,18 +473,18 @@
 				TargetAttributes = {
 					E094C6B5207FEAFA00545CB5 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					E094C6C9207FEAFA00545CB5 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E094C6B5207FEAFA00545CB5;
 					};
 					E094C6D4207FEAFA00545CB5 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E094C6B5207FEAFA00545CB5;
 					};
@@ -578,25 +620,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0B688DE209CB94E00C83D07 /* IAddUserViewModel.swift in Sources */,
+				788D3D3A2267EC8000B0F45B /* AddUserConfigurator.swift in Sources */,
+				7800B0A6224987F4004035AD /* AddUserWorker.swift in Sources */,
 				E04B13AA20926D21002241A8 /* HttpErrors.swift in Sources */,
-				783A7C8E2208FB240074A504 /* HomeViewController.swift in Sources */,
+				78AC683B22849034004D0FBB /* HomeTabPresenter.swift in Sources */,
 				783A7C8A2208F5980074A504 /* LifetimeCell.swift in Sources */,
+				78AC683D22849034004D0FBB /* HomeTabRouter.swift in Sources */,
 				E094C6BC207FEAFA00545CB5 /* AddUserViewController.swift in Sources */,
 				E0FF85A9208A3135004F9F8F /* HttpRequest.swift in Sources */,
 				E0B688DA209C969E00C83D07 /* DBConnection.swift in Sources */,
+				78AC683422848DB8004D0FBB /* HomePresenter.swift in Sources */,
 				E094C6BA207FEAFA00545CB5 /* AppDelegate.swift in Sources */,
 				E00AC9ED209B83DF0092CA7C /* HttpErrosModel.swift in Sources */,
-				E00F1487208FBFDE00F98F4D /* UsersService.swift in Sources */,
 				E0FF85AC208A38C7004F9F8F /* Api.swift in Sources */,
+				78AC683222848DB8004D0FBB /* HomeViewController.swift in Sources */,
+				7800B0A222496F5F004035AD /* AddUserPresenter.swift in Sources */,
 				783A7C872208E7270074A504 /* RoundedImageView.swift in Sources */,
+				78AC683022848DB8004D0FBB /* HomeRouter.swift in Sources */,
+				78AC683E22849034004D0FBB /* HomeTabModels.swift in Sources */,
+				78647BD12244449A008F8D55 /* AddUserModels.swift in Sources */,
 				E0FF85AE208A81A5004F9F8F /* UserModel.swift in Sources */,
 				E081AD4B209BC51500E80D22 /* FortniteStats.xcdatamodeld in Sources */,
+				7800B0A4224970A7004035AD /* AddUserRouter.swift in Sources */,
+				78AC683322848DB8004D0FBB /* HomeWorker.swift in Sources */,
+				78647BD322445075008F8D55 /* AddUserInteractor.swift in Sources */,
+				78CDDCBE228B5FB5006D6277 /* Entities.swift in Sources */,
 				E0B688DC209CA9F000C83D07 /* UserDB.swift in Sources */,
 				E00AC9EB209B77950092CA7C /* PlatformSegmentedControl.swift in Sources */,
+				78AC683122848DB8004D0FBB /* HomeModels.swift in Sources */,
+				78AC682F22848DB8004D0FBB /* HomeInteractor.swift in Sources */,
+				78AC683F22849034004D0FBB /* HomeTabViewController.swift in Sources */,
 				E00AC9E8209B69E20092CA7C /* AlertsViewControllerExtension.swift in Sources */,
+				78AC683C22849034004D0FBB /* HomeTabWorker.swift in Sources */,
 				E0074DCC20BF30F900457414 /* Snackbar.swift in Sources */,
-				E0FF85A7208A2A89004F9F8F /* AddUserViewModel.swift in Sources */,
+				78B8E04C2284933F00378D17 /* HomeTabInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +663,6 @@
 			files = (
 				E094C6CF207FEAFA00545CB5 /* LoginViewModelTest.swift in Sources */,
 				E0C5D0BD20A61DA600CEB24E /* XCTestCase.swift in Sources */,
-				E0C5D0B620A5D8C300CEB24E /* LoginRepositoryMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,7 +834,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.piin.FortniteStats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -797,7 +853,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.piin.FortniteStats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -809,11 +865,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LS24456JYE;
 				INFOPLIST_FILE = FortniteStatsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.piin.FortniteStatsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FortniteStats.app/FortniteStats";
 			};
@@ -826,11 +883,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LS24456JYE;
 				INFOPLIST_FILE = FortniteStatsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.piin.FortniteStatsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FortniteStats.app/FortniteStats";
 			};
@@ -842,11 +900,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LS24456JYE;
 				INFOPLIST_FILE = FortniteStatsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.piin.FortniteStatsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FortniteStats;
 			};
@@ -858,11 +917,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LS24456JYE;
 				INFOPLIST_FILE = FortniteStatsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.piin.FortniteStatsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FortniteStats;
 			};
