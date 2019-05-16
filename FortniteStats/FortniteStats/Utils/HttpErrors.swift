@@ -7,7 +7,7 @@
 //
 
 
-enum HttpErrors {
+enum HttpErrors: Error {
 
     case jsonError
     case serverError
