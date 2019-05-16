@@ -11,19 +11,6 @@ import UIKit
 
 class DBConnection {
     
-    enum Entities {
-        
-        case User
-        
-        func toString() -> String {
-            switch self {
-            case .User:
-                return "ManagedUsers"
-            }
-        }
-        
-    }
-    
     // MARK: - Properties
     private let appDelagate: AppDelegate
     private let context: NSManagedObjectContext
@@ -49,9 +36,9 @@ class DBConnection {
         
         let record = NSManagedObject(entity: entity, insertInto: context)
         
-        if let params = parameters as NSDictionary? {
+        if let params = parameters as [String: Any]? {
             for (key, value) in params {
-                record.setValue(value, forKey: key as! String)
+                record.setValue(value, forKey: key)
             }
         }
         
@@ -63,5 +50,7 @@ class DBConnection {
             return nil
         }
     }
+    
+
     
 }
