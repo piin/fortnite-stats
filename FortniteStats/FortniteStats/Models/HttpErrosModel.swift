@@ -8,8 +8,16 @@
 
 import Foundation
 
-struct HttpErrosModel: Decodable {
+struct HttpErrorsModel: Decodable {
     
     let error: String
     
 }
+
+struct HttpMessagesModel : Decodable {
+    
+    let message: String
+    
+}
+
+

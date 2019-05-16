@@ -14,6 +14,8 @@ class PlatformSegmentedControl: UISegmentedControl {
         case pc
         case psn
         case xbl
+        
+        func getString() -> String { return self.rawValue }
     }
     
     /**
