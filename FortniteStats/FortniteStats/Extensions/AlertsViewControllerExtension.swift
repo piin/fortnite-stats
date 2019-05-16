@@ -8,32 +8,36 @@
 
 import UIKit
 
-extension UIViewController {
+protocol Alertable {
+    var alertView: UIAlertController? { get set }
+}
+
+extension Alertable where Self: UIViewController {
     
     /**
      Present an alert with a simple "OK" button
      - parameters:
         - message: String?
      */
-    func showAlert(message:String?) {
-        let alert = UIAlertController(title: "Fortnite stats", message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
+    func showAlert(message:String?, controller: inout UIAlertController? ) {
+        controller = UIAlertController(title: "Fortnite stats", message: message, preferredStyle: .alert)
+        controller?.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(controller!, animated: true, completion: .none)
     }
     
     /**
      Present an alert with the text "Please wait..."
      */
-    func showProgressView() {
-        let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
+    func showProgressView(controller: inout UIAlertController?) {
+        controller = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
         
         let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
         loadingIndicator.hidesWhenStopped = true
         loadingIndicator.style = UIActivityIndicatorView.Style.gray
-        loadingIndicator.startAnimating();
+        loadingIndicator.startAnimating()
         
-        alert.view.addSubview(loadingIndicator)
-        present(alert, animated: true, completion: nil)
+        controller?.view.addSubview(loadingIndicator)
+        present(controller!, animated: false, completion: .none)
     }
     
 }
